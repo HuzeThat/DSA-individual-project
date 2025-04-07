@@ -1,1 +1,23 @@
+## Student Information
 
+- **Name:** Huzeifa Siraj
+- **Student ID:** RMNS-1114/23
+- **Course:** Data Structure and Algorithm
+
+Description
+This program iterates through an array of integers to determine the largest, second largest, and third largest elements. It handles edge cases where there may not be enough distinct elements for the second or third largest values.
+
+Features
+Finds the largest, second largest, and third largest elements in an integer array.
+
+Handles cases where the second or third largest elements may not exist (e.g., insufficient unique elements).
+
+Technologies Used
+C++: Programming language used for implementation.
+
+How It Works
+Initializes largest, secondLargest, and thirdLargest to the minimum possible integer value.
+
+Iterates through the array and updates the values of largest, secondLargest, and thirdLargest based on the current element.
+
+Prints a message if the second or third largest element does not exist.
