@@ -1,1 +1,52 @@
+In algorithms, iterative and recursive approaches are two common ways to solve problems, especially those involving repetition or breaking down tasks into smaller subproblems.
+
+🔁 Iterative Approach
+
+How it works: Uses loops (for, while) to repeat a set of instructions.
+
+Memory: Typically more memory-efficient because it doesn’t involve function calls (no extra call stack usage).
+
+Performance: Often faster because it avoids the overhead of multiple function calls.
+
+🧠 Example: Factorial (Iterative)
+#include <iostream>
+using namespace std;
+
+int factorial_iterative(int n) {
+    int result = 1;
+    for (int i = 2; i <= n; ++i) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int n = 5;
+    cout << "Iterative Factorial of " << n << " is: " << factorial_iterative(n) << endl;
+    return 0;
+}
+
+🔄 Recursive Approach
+How it works: A function calls itself with a smaller input, reducing the problem step-by-step.
+
+Memory: Can use more memory due to function call stack.
+
+Performance: Might be slower or risk stack overflow if not optimized (e.g., no tail recursion optimization).
+
+🧠 Example: Factorial (Recursive)
+
+#include <iostream>
+using namespace std;
+
+int factorial_recursive(int n) {
+    if (n == 0 || n == 1)
+        return 1;
+    return n * factorial_recursive(n - 1);
+}
+
+int main() {
+    int n = 5;
+    cout << "Recursive Factorial of " << n << " is: " << factorial_recursive(n) << endl;
+    return 0;
+}
 
